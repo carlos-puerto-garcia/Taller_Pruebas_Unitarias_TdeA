@@ -1,6 +1,7 @@
 import unittest
 import volesf
 import ejemplo
+import FactorialNum
 
 #crear casos de prueba para las funciones
 # para eso debemos crear una clase
@@ -18,6 +19,13 @@ class Testejemplo_add(unittest.TestCase):
     def test_ejemplo_add(self):
         result=ejemplo.add(7,3)
         self.assertEqual(result,10)
+        
+class TestFactorial(unittest.TestCase):
+    'escribimos el metodo nombre del archivo'
+    def test_func_factorial(self):
+        result=FactorialNum.Factorial(10)
+        'validamos que sean iguales'
+        self.assertEqual(result,3628800)        
 
 if __name__ == '__main__':
     unittest.main()
