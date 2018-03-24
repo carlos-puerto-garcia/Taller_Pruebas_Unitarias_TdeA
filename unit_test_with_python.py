@@ -3,6 +3,7 @@ import volesf
 import ejemplo
 import FactorialNum
 import edad
+import Numpar
 
 #crear casos de prueba para las funciones
 # para eso debemos crear una clase
@@ -35,7 +36,13 @@ class testedad(unittest.TestCase):
         result= edad.edad(2000)
         self.assertEqual(result,18)
 
-        #18		
+        #18
+
+class TestNumpar(unittest.TestCase):
+    # Escribimos el metodo
+    def test_num_par(self):
+        result=Numpar.numpar(2)
+        self.assertEqual(result,"Este numero es par")
 
 if __name__ == '__main__':
     unittest.main()
