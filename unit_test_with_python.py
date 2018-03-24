@@ -2,6 +2,7 @@ import unittest
 import volesf
 import ejemplo
 import FactorialNum
+import edad
 
 #crear casos de prueba para las funciones
 # para eso debemos crear una clase
@@ -25,7 +26,16 @@ class TestFactorial(unittest.TestCase):
     def test_func_factorial(self):
         result=FactorialNum.Factorial(10)
         'validamos que sean iguales'
-        self.assertEqual(result,3628800)        
+        self.assertEqual(result,3628800)  
+
+'''diego ubarnes martinez'''
+class testedad(unittest.TestCase):
+    '''escribimos el metodo '''
+    def test_edad(self):
+        result= edad.edad(2000)
+        self.assertEqual(result,18)
+
+        #18		
 
 if __name__ == '__main__':
     unittest.main()
