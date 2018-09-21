@@ -4,6 +4,8 @@ import ejemplo
 import FactorialNum
 import edad
 import Numpar
+import resta
+import val_positivo
 
 #crear casos de prueba para las funciones
 # para eso debemos crear una clase
@@ -43,6 +45,28 @@ class TestNumpar(unittest.TestCase):
     def test_num_par(self):
         result=Numpar.numpar(2)
         self.assertEqual(result,"Este numero es par")
+
+class testPositivo(unittest.TestCase):
+    # Código para validar si un número es positivo - Jhony Andrés Angulo
+    def test_positivo(self):
+        num = int(input("Ingrese un número a evaluar:\n"))
+        val = val_positivo.positivo(num)
+        self.assertEqual(val,"Positivo")
+
+class Testresta(unittest.TestCase):
+    # Escribimos el metodo
+    def test_resta(self):
+        result=resta.menos(7,3)
+        self.assertEqual(result,5)
+
+
+class testImpares(unittest.TestCase):
+    #escribimos el metodo
+    def test_Impares(self):
+        numero = input("ingrese un nùmero : ")
+        result=Impares.Impares(numero)
+        self.assertGreater(result, 5)        
+
 
 if __name__ == '__main__':
     unittest.main()
