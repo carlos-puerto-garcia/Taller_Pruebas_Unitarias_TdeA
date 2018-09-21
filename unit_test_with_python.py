@@ -60,6 +60,14 @@ class Testresta(unittest.TestCase):
         self.assertEqual(result,5)
 
 
+class testImpares(unittest.TestCase):
+    #escribimos el metodo
+    def test_Impares(self):
+        numero = input("ingrese un nùmero : ")
+        result=Impares.Impares(numero)
+        self.assertGreater(result, 5)        
+
+
 if __name__ == '__main__':
     unittest.main()
 
