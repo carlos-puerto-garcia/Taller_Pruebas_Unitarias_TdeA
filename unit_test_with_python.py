@@ -6,6 +6,9 @@ import edad
 import Numpar
 import resta
 import val_positivo
+import math
+import circulos
+
 
 #crear casos de prueba para las funciones
 # para eso debemos crear una clase
