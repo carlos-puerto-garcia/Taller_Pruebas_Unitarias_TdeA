@@ -7,7 +7,7 @@ import Numpar
 import resta
 import val_positivo
 import math
-import circulos
+import circulos_Luis_Bedoya
 
 
 #crear casos de prueba para las funciones
