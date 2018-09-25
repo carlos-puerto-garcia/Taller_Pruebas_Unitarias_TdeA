@@ -7,6 +7,7 @@ import Numpar
 import resta
 import val_positivo
 import math
+import media
 import circulos_Luis_Bedoya
 
 
@@ -75,6 +76,12 @@ class Test_Circulos(unittest.TestCase):
     def test_area(self):
         resultado = circulos.Radio_circulo(2)
         self.assertEqual(resultado,12.566370614359172)
+		
+class Testmedia(unittest.TestCase):
+    # Escribimos el metodo
+    def test_media(self):
+        result=media.medida_media(3,5)
+        self.assertEqual(result,4)
 
 
 if __name__ == '__main__':
