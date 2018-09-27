@@ -9,6 +9,7 @@ import val_positivo
 import math
 import media
 import circulos_Luis_Bedoya
+import potencia
 
 
 #crear casos de prueba para las funciones
@@ -82,6 +83,12 @@ class Testmedia(unittest.TestCase):
     def test_media(self):
         result=media.medida_media(3,5)
         self.assertEqual(result,4)
+
+class Test_Potencia(unittest.TestCase):
+	def test_potencia(self):
+		resultado = potencia.potencia(6)
+		self.assertEqual(resultado,36)
+
 
 
 if __name__ == '__main__':
